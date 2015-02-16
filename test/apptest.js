@@ -15,4 +15,9 @@ describe('Test Suite 1', function () {
         assert.ok(1 === 1, "This shouldn't fail");
        // assert.ok(false, "This should fail");
     })
+
+    it('Name should be filled', function () {
+        
+       assert.ok(customer.name === "piet", "This should fail");
+    })
 })
