@@ -9,4 +9,3 @@ machine:
     - java -Djava.library.path=/tmp/DynamoDBLocal_lib -jar /tmp/DynamoDBLocal.jar -inMemory : 
       background: true
     - sleep 2
-    
