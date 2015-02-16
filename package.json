@@ -1,0 +1,29 @@
+{
+  "name": "NodeCITest",
+  "version": "1.0.0",
+  "description": "NodeCITest",
+  "main": "app.js",
+  "author": "rvdwijngaard",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^2.1.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rvdwijngaard/nodeci"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rvdwijngaard/nodeci/issues"
+  },
+  "homepage": "https://github.com/rvdwijngaard/nodeci"
+}
