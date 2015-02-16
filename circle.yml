@@ -8,4 +8,3 @@ machine:
     - tar -xzf /tmp/dynamodb_local_latest.tar.gz -C /tmp
     - java -Djava.library.path=/tmp/DynamoDBLocal_lib -jar /tmp/DynamoDBLocal.jar -inMemory : 
       background: true
-    - sleep 2
