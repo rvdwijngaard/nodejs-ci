@@ -1,3 +1,5 @@
 ﻿machine:
+  timezone:
+    America/Los_Angeles
   node:
-    version: 0.10.28
+    version: 0.10.22
