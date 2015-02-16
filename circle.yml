@@ -1,5 +1,8 @@
-machine:
+﻿machine:
   timezone:
     America/Los_Angeles
   node:
     version: 0.10.22
+  pre:
+    scripts/pre_build.sh	
+    
