@@ -4,4 +4,4 @@ machine:
   node:
     version: 0.10.22
   pre:
-    - ./scripts/pre_build.sh
+    - scripts/pre_build.sh
