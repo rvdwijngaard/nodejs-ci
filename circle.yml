@@ -1,5 +1,5 @@
 machine:
   node:
     version: 0.10.22
-pre:
-  - bash ./scripts/pre_build.sh
+  pre:
+    - bash ./scripts/pre_build.sh
