@@ -8,19 +8,19 @@
     "test": "tests"
   },
   "dependencies": {},
-  "devDependencies": {
-    "istanbul": "^0.3.5",
-    "mocha": "^2.1.0",
-    "xunit-file": "0.0.6",
-     "chai": "^1.9.1",
-    "grunt": "^0.4.5",
-    "grunt-express-server": "^0.4.17",
-    "grunt-simple-mocha": "^0.4.0",        
-    "superagent": "^0.18.0"    
-  },
-  "scripts": {
-    "test": "mocha"
-  },
+    "devDependencies": {
+        "istanbul": "^0.3.5",
+        "mocha": "^2.1.0",
+        "xunit-file": "0.0.6",
+        "chai": "^1.9.1",
+        "grunt": "^0.4.5",
+        "grunt-express-server": "^0.4.17",
+        "grunt-simple-mocha": "^0.4.0",
+        "superagent": "^0.18.0"
+    },
+    "scripts": {
+    "test": "grunt"
+  },  
   "repository": {
     "type": "git",
     "url": "https://github.com/rvdwijngaard/nodeci"
