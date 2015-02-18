@@ -1,7 +1,14 @@
 ﻿require("xunit-file");
 
 module.exports = function (grunt) {
-    grunt.initConfig({    
+    grunt.initConfig({         
+        express: {
+            test: {
+                options: {
+                    script: "server.js"
+                }
+            }
+        },
         simplemocha: {
             options: {
                 globals: ["should"],
@@ -12,7 +19,8 @@ module.exports = function (grunt) {
             },
             all: { src: ["./test/*.js"] }
         }
-    });    
+    });
+    grunt.loadNpmTasks("grunt-express-server");
     grunt.loadNpmTasks("grunt-simple-mocha");
-    grunt.registerTask("default", ["simplemocha:all"]);
+    grunt.registerTask("default", ["express:test", "simplemocha:all"]);
 };
