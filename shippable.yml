@@ -5,7 +5,7 @@ env:
   global:
     - AWS_DEFAULT_REGION=us-east-1 
     - AWS_STACK=7da2eda5-31d4-45a6-a812-8277efc97ba2 
-    - AWS_APP_ID=deb3e127-4034-409b-bb1a-95e55a6c4b50
+    - AWS_APP_ID=10fbb96f-e62d-45bd-ba33-61d6d6c3a688
     - AWS_ACCESS_KEY_ID=AKIAIOWKWMW57BL5H6NQ
     - secure: F8DKEUVjU6EGchyGWtI0jGCen5zjcd6aBolJn9KAvaKkeSwk4NEhY333+6Yp/p+9bVvfh4aGcnSD1LCtt9/r/WhFLdfJ4UZ6pSD7FqE65i9Njpi0Fou9kVbCiOepo9f3Oqa6shTNhu3dWpM3hCeWRJ58OpSX7rbzvw9pSuzEI8jxAfPL0kpR3s1qwHDYaOdWSjfvq/dRB8ukm7g/Hx71ib6VIPBOn4FwIoNzWfVlbiyJP3YMXuQx8FQYpSZJZHFE3bt2OQjnXeTBWRbLsLGhSc5lD3o2coSD5guOw5KJPF6KDI5dWHFItncpu/72/yGfFuFPMYptIM55754nP2vYbA==
     - XUNIT_FILE=shippable/testresults/result.xml
