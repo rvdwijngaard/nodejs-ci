@@ -1,6 +1,6 @@
 ﻿language: node_js
 node_js:
-  - "0.10"
+  - "0.10.25"
 env:
   global:
     - AWS_ACCESS_KEY_ID=AKID
