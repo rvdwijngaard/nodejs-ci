@@ -8,8 +8,7 @@ env:
     - secure: F8DKEUVjU6EGchyGWtI0jGCen5zjcd6aBolJn9KAvaKkeSwk4NEhY333+6Yp/p+9bVvfh4aGcnSD1LCtt9/r/WhFLdfJ4UZ6pSD7FqE65i9Njpi0Fou9kVbCiOepo9f3Oqa6shTNhu3dWpM3hCeWRJ58OpSX7rbzvw9pSuzEI8jxAfPL0kpR3s1qwHDYaOdWSjfvq/dRB8ukm7g/Hx71ib6VIPBOn4FwIoNzWfVlbiyJP3YMXuQx8FQYpSZJZHFE3bt2OQjnXeTBWRbLsLGhSc5lD3o2coSD5guOw5KJPF6KDI5dWHFItncpu/72/yGfFuFPMYptIM55754nP2vYbA==
 
 # Version number
-node_js:
-  - 0.10.25
+node_js:  
   - 0.10.30
 
 # The path for Xunit to output test reports
