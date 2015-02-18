@@ -1,11 +1,6 @@
 ﻿language: node_js
 node_js:
   - "0.10.25"
-env:
-  global:
-    - AWS_ACCESS_KEY_ID=AKID
-    - AWS_SECRET_ACCESS_KEY=SECRET
-    - AWS_REGION=us-east-1
 
 env:
   - XUNIT_FILE=shippable/testresults/result.xml
@@ -13,11 +8,7 @@ env:
 # Create directories for test and coverage reports
 before_script:
   - mkdir -p shippable/testresults
-  - mkdir -p shippable/codecoverage
-   - wget http://dynamodb-local.s3-website-us-west-2.amazonaws.com/dynamodb_local_latest.tar.gz -O /tmp/dynamodb_local_latest.tar.gz
-  - tar -xzf /tmp/dynamodb_local_latest.tar.gz -C /tmp
-  - java -Djava.library.path=/tmp/DynamoDBLocal_lib -jar /tmp/DynamoDBLocal.jar -inMemory &
-  - sleep 2
+  - mkdir -p shippable/codecoverage  
 
 # Running the tests with grunt
 script:
