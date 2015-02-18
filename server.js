@@ -1,6 +1,7 @@
 ﻿var express = require('express');
 var app = express();
-
+var Customer = require('./lib/index');
+var customer = new Customer;
 app.get("/", function (req, res) {
     customer.getBalance(function (err, balance) {        
         res.send("Hey buddy!");
