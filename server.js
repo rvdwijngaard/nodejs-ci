@@ -14,6 +14,10 @@ app.get('/sprintdemo', function (req, res) {
     res.send('the sprint demo session with rine!');
 });
 
+app.get('/crash', function (req, res) { 
+    throw Error();
+});
+
 var server = app.listen(process.env.PORT || 80, function () {
     console.log('listening: %s', server.address().port);
 });
