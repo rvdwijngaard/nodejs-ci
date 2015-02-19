@@ -40,3 +40,4 @@ before_install:
 
 after_success:  
   - aws opsworks create-deployment --stack-id $AWS_STACK --app-id $AWS_APP_ID --command '{"Name":"deploy"}'
+  - curl -H "x-api-key:66be4248d04b54d4aba87d0934d3d3a6dab3dcda55f6a2a" -d "deployment[app_name]=TI logging POC" -d "deployment[description]=This is an app id deployment" https://api.newrelic.com/deployments.xml
