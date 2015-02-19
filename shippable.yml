@@ -6,7 +6,9 @@ env:
     - AWS_DEFAULT_REGION=us-east-1 
     - AWS_STACK=7da2eda5-31d4-45a6-a812-8277efc97ba2 
     - AWS_APP_ID=10fbb96f-e62d-45bd-ba33-61d6d6c3a688    
-    - secure: F8DKEUVjU6EGchyGWtI0jGCen5zjcd6aBolJn9KAvaKkeSwk4NEhY333+6Yp/p+9bVvfh4aGcnSD1LCtt9/r/WhFLdfJ4UZ6pSD7FqE65i9Njpi0Fou9kVbCiOepo9f3Oqa6shTNhu3dWpM3hCeWRJ58OpSX7rbzvw9pSuzEI8jxAfPL0kpR3s1qwHDYaOdWSjfvq/dRB8ukm7g/Hx71ib6VIPBOn4FwIoNzWfVlbiyJP3YMXuQx8FQYpSZJZHFE3bt2OQjnXeTBWRbLsLGhSc5lD3o2coSD5guOw5KJPF6KDI5dWHFItncpu/72/yGfFuFPMYptIM55754nP2vYbA==
+    - secure: F8DKEUVjU6EGchyGWtI0jGCen5zjcd6aBolJn9KAvaKkeSwk4NEhY333+6Yp/p+9bVvfh4aGcnSD1LCtt9/r/WhFLdfJ4UZ6pSD7FqE65i9Njpi0Fou9kVbCiOepo9f3Oqa6shTNhu3dWpM3hCeWRJ58OpSX7rbzvw9pSuzEI8jxAfPL0kpR3s1qwHDYaOdWSjfvq/dRB8ukm7g/Hx71ib6VIPBOn4FwIoNzWfVlbiyJP3YMXuQx8FQYpSZJZHFE3bt2OQjnXeTBWRbLsLGhSc5lD3o2coSD5guOw5KJPF6KDI5dWHFItncpu/72/yGfFuFPMYptIM55754nP2vYbA==	
+	# new relic
+	- secure: NXWeVGNCNnJJUEsPlvt5LxIBlACe8mXA6x6Eruap7D9OpI/QSlTXrmwZwYC//3MgmmvLEMtVv3VT7QWp7RVjPOA2m4hd5GP2TumPsejTvyCbvIlmrZ85LT4pWMh+nYeEAF5HMAlZlyYvGQY+CfzK9FwizFa8MIAkpGVHJ7kzAh2QdFr8x/E4rXwqlXEsjXYky1Mh7ZX+bVnkpxtfA7/JDYf+5J762F4crE2Keo9MUjgZnOx2MhdQ/ni45agToZlzAY/xNrKDrMWC9VjGowbGGxWMnA7QKk3XEcZaPypfptL3hHOeMpLeZjXRfHq1WjCU0j7fUBjNrnF36qREugCgxQ==
     - XUNIT_FILE=shippable/testresults/result.xml
 
 # Version number
@@ -40,4 +42,4 @@ before_install:
 
 after_success:  
   - aws opsworks create-deployment --stack-id $AWS_STACK --app-id $AWS_APP_ID --command '{"Name":"deploy"}'
-  - curl -H "x-api-key:66be4248d04b54d4aba87d0934d3d3a6dab3dcda55f6a2a" -d "deployment[app_name]=TI logging POC" -d "deployment[description]=This is an app id deployment" https://api.newrelic.com/deployments.xml
+  - curl -H "x-api-key:$NEWRELIC_APIKEY" -d "deployment[app_name]=TI logging POC" -d "deployment[description]=This is an app id deployment" https://api.newrelic.com/deployments.xml
