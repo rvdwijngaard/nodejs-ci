@@ -11,7 +11,7 @@ app.get("/", function (req, res) {
 });
 
 app.get('/sprintdemo', function (req, res) { 
-    res.send('the sprint demo session with rine!');
+    res.send('the sprint demo session with rine and john and satya!');
 });
 
 app.get('/crash', function (req, res) { 
